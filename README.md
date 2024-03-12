@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Профильное задание на стажировку Frontend-разработчиком Вконтакте
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Приложение развернуто во Вконтакте по [ссылке](https://vk.com/app51874739)
 
-Currently, two official plugins are available:
+## Данный проект собран с помощью [Vite.js](https://vitejs.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Архитектурная методология
+[Feature Sliced Design](https://feature-sliced.design/)
 
-## Expanding the ESLint configuration
+### Список используемых технологий:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [React.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tanstack Query](https://tanstack.com/query/latest/docs/framework/react/overview)
+- [React Hook Form](https://react-hook-form.com/)
+- [Yup](https://www.npmjs.com/package/yup)
+- [Eruda](https://www.npmjs.com/package/eruda)
+- [Axios](https://www.npmjs.com/package/axios)
+- [VK UI](https://vkcom.github.io/VKUI/)
+- [VK Bridge](https://dev.vk.com/ru/bridge/overview)
 
-- Configure the top-level `parserOptions` property like this:
-
+### Команда для запуска
 ```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+pnpm install
+pnpm dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Другие команды
+```js
+pnpm build - запуск сборки приложения
+pnpm preview - запуск предпросмотра сборки
+pnpm type-check - запуск проверки типизации
+pnpm lint/lint:md/lint:md:fix - запуск проверки линтером файлов
+pnpm format - форматирование файлов prettier
+pnpm tunnel - запуск локально сервера через VK приложение
+pnpm deploy:vk - запуск сборки и деплоя приложения в VK
+```
